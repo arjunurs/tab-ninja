@@ -1,7 +1,7 @@
 {
   "name": "Tab Ninja",
-  "version": "0.0.4",
-  "manifest_version": 2,
+  "version": "0.0.5",
+  "manifest_version": 3,
   "description": "Close tabs with loads of options (left, right, audible, muted, domain, url, pinned, etc)",
   "homepage_url": "https://github.com/harshjv/tab-ninja",
   "author": "Harsh Vakharia <harshjv@gmail.com> (https://harshjv.github.io)",
@@ -10,14 +10,14 @@
     "32": "icons/icon-32.png",
     "128": "icons/icon-128.png"
   },
-  "background" : {
-    "scripts" : [ "background.js" ]
+  "background": {
+    "service_worker": "src/background.js"
   },
   "permissions": [
     "tabs",
     "contextMenus"
   ],
-  "browser_action": {
+  "action": {
     "default_icon": {
       "16": "icons/icon-16.png",
       "32": "icons/icon-32.png",
