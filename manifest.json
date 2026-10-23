@@ -17,6 +17,12 @@
     "tabs",
     "contextMenus"
   ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none'"
+  },
+  "externally_connectable": {
+    "ids": []
+  },
   "action": {
     "default_icon": {
       "16": "icons/icon-16.png",

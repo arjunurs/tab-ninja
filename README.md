@@ -13,17 +13,20 @@ Close tabs with loads of options (left, right, audible, muted, domain, url, pinn
 
 ## Permissions
 
-* `tabs` / `Read your browsing history`: Used for querying tabs with same url/host/domain
+* `tabs` / `Read your browsing history`: Used to read tab URLs for the Same Host / Same Domain / Same URL options. Tab Ninja has no host permissions, no content scripts, and never reads page content.
+* `contextMenus`: Adds the right-click menu.
+
+Tab Ninja stores no data and makes no network requests.
 
 
 ## Development
 
 1. Clone this repo
-2. Go to cloned repo directory and do `npm install`
-3. Build and start development tasks `npm run dev`
-4. Go to chrome extensions [chrome://extensions](chrome://extensions)
-5. Enable developer mode
-6. Click on load unpacked extension and select this cloned repo
+2. Go to chrome extensions [chrome://extensions](chrome://extensions)
+3. Enable developer mode
+4. Click on load unpacked extension and select this cloned repo
+
+There is no build step. `npm install && npm test` runs the linter, and `npm run dist` packages `extension.zip` for the Chrome Web Store.
 
 
 ## License
